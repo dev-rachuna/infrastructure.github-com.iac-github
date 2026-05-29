@@ -19,6 +19,7 @@
       "artifacts.opentofu.vault-userpass-account": "${local.repository_artifacts_opentofu_vault_userpass_account[\"artifacts.opentofu.vault-userpass-account\"]}",
       "awesome": "${local.repository_awesome[\"awesome\"]}",
       "gitlab-profile": "${local.repository_gitlab_profile[\"gitlab-profile\"]}",
+      "infrastructure.github-com.iac-github": "${local.repository_infrastructure_github_com_iac_github[\"infrastructure.github-com.iac-github\"]}",
       "infrastructure.gitlab-com.ansible": "${local.repository_infrastructure_gitlab_com_ansible[\"infrastructure.gitlab-com.ansible\"]}",
       "infrastructure.gitlab-com.gitlab-profile": "${local.repository_infrastructure_gitlab_com_gitlab_profile[\"infrastructure.gitlab-com.gitlab-profile\"]}",
       "infrastructure.gitlab-com.iac-gitlab": "${local.repository_infrastructure_gitlab_com_iac_gitlab[\"infrastructure.gitlab-com.iac-gitlab\"]}",

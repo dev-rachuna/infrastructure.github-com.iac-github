@@ -1,0 +1,9 @@
+{
+  "data": {
+    "vault_generic_secret": {
+      "auth_github": {
+        "path": "dev.rachuna/auth/github.com"
+      }
+    }
+  }
+}
