@@ -24,7 +24,7 @@ def repository_identifier(name: str) -> str:
 
 
 def repository_file_name(name: str) -> str:
-    return f"repository_{repository_identifier(name)}.tf.json"
+    return f"{repository_identifier(name)}.tf.json"
 
 
 def load_json(path: Path) -> dict:

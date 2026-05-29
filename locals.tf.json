@@ -12,6 +12,7 @@
       "artifacts.ansible-roles.sudo": "${local.repository_artifacts_ansible_roles_sudo[\"artifacts.ansible-roles.sudo\"]}",
       "artifacts.ansible-roles.users-management": "${local.repository_artifacts_ansible_roles_users_management[\"artifacts.ansible-roles.users-management\"]}",
       "artifacts.containers.ansible": "${local.repository_artifacts_containers_ansible[\"artifacts.containers.ansible\"]}",
+      "artifacts.containers.gitlab-profile": "${local.repository_artifacts_containers_gitlab_profile[\"artifacts.containers.gitlab-profile\"]}",
       "artifacts.opentofu.gitlab-group": "${local.repository_artifacts_opentofu_gitlab_group[\"artifacts.opentofu.gitlab-group\"]}",
       "artifacts.opentofu.gitlab-profile": "${local.repository_artifacts_opentofu_gitlab_profile[\"artifacts.opentofu.gitlab-profile\"]}",
       "artifacts.opentofu.gitlab-project": "${local.repository_artifacts_opentofu_gitlab_project[\"artifacts.opentofu.gitlab-project\"]}",
