@@ -1,0 +1,19 @@
+{
+  "locals": {
+    "repository_artifacts_ansible_roles_set_hostname": {
+      "artifacts.ansible-roles.set-hostname": {
+        "description": "Rola Ansible set-hostname — ustawia hostname serwera i aktualizuje /etc/hosts (wpis 127.0.1.1). Obsługuje Debian, Ubuntu, AlmaLinux (EL 7/8/9), Alpine.",
+        "visibility": "public",
+        "has_issues": true,
+        "has_projects": true,
+        "has_wiki": true,
+        "has_discussions": false,
+        "archived": false,
+        "allow_forking": true,
+        "is_template": false,
+        "default_branch": "main",
+        "topics": []
+      }
+    }
+  }
+}

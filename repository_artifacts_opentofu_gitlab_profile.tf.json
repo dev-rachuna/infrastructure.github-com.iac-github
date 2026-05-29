@@ -1,0 +1,19 @@
+{
+  "locals": {
+    "repository_artifacts_opentofu_gitlab_profile": {
+      "artifacts.opentofu.gitlab-profile": {
+        "description": "Dokumentacja modułów OpenTofu",
+        "visibility": "public",
+        "has_issues": true,
+        "has_projects": true,
+        "has_wiki": true,
+        "has_discussions": false,
+        "archived": false,
+        "allow_forking": true,
+        "is_template": false,
+        "default_branch": "main",
+        "topics": []
+      }
+    }
+  }
+}

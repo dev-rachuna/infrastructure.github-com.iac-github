@@ -1,0 +1,19 @@
+{
+  "locals": {
+    "repository_artifacts_ansible_roles_install_keepalived_vip": {
+      "artifacts.ansible-roles.install-keepalived-vip": {
+        "description": "Rola Ansible install-keepalived-vip — instaluje i konfiguruje keepalived do obslugi wirtualnych adresow IP (VIP) przez VRRP.",
+        "visibility": "public",
+        "has_issues": true,
+        "has_projects": true,
+        "has_wiki": true,
+        "has_discussions": false,
+        "archived": false,
+        "allow_forking": true,
+        "is_template": false,
+        "default_branch": "main",
+        "topics": []
+      }
+    }
+  }
+}

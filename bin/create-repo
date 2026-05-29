@@ -1,0 +1,121 @@
+#!/usr/bin/env python3
+import argparse
+import json
+import re
+import sys
+from pathlib import Path
+
+DEFAULT_REPOSITORY = {
+    "visibility": "public",
+    "has_issues": True,
+    "has_projects": True,
+    "has_wiki": True,
+    "has_discussions": False,
+    "archived": False,
+    "allow_forking": True,
+    "is_template": False,
+    "default_branch": "main",
+    "topics": [],
+}
+
+
+def repository_identifier(name: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_")
+
+
+def repository_file_name(name: str) -> str:
+    return f"repository_{repository_identifier(name)}.tf.json"
+
+
+def load_json(path: Path) -> dict:
+    try:
+        return json.loads(path.read_text())
+    except FileNotFoundError:
+        return {}
+    except json.JSONDecodeError as exc:
+        raise SystemExit(f"Invalid JSON in {path}: {exc}") from exc
+
+
+def write_json(path: Path, data: dict) -> None:
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Add a GitHub repository definition to this OpenTofu project."
+    )
+    parser.add_argument("name", help="Repository name, for example artifacts.example")
+    parser.add_argument(
+        "description",
+        nargs="+",
+        help="Repository description. Quote it or pass it as remaining words.",
+    )
+    parser.add_argument(
+        "--private",
+        action="store_true",
+        help="Create the repository as private instead of public.",
+    )
+    parser.add_argument(
+        "--default-branch",
+        default="main",
+        help="Default branch to track in configuration. Defaults to main.",
+    )
+    return parser.parse_args()
+
+
+def main() -> int:
+    args = parse_args()
+    name = args.name.strip()
+    description = " ".join(args.description).strip()
+
+    if not re.fullmatch(r"[A-Za-z0-9_.-]+", name):
+        print(
+            "Repository name may contain only letters, digits, dots, underscores and hyphens.",
+            file=sys.stderr,
+        )
+        return 2
+    if not repository_identifier(name):
+        print("Repository name must contain at least one alphanumeric character.", file=sys.stderr)
+        return 2
+    if not description:
+        print("Description must not be empty.", file=sys.stderr)
+        return 2
+
+    root = Path(__file__).resolve().parents[1]
+    locals_path = root / "locals.tf.json"
+    repo_path = root / repository_file_name(name)
+    local_name = f"repository_{repository_identifier(name)}"
+
+    locals_data = load_json(locals_path)
+    repositories = locals_data.setdefault("locals", {}).setdefault("repositories", {})
+
+    if name in repositories or repo_path.exists():
+        print(f"Repository {name!r} is already defined.", file=sys.stderr)
+        return 1
+
+    repository = dict(DEFAULT_REPOSITORY)
+    repository["description"] = description
+    repository["visibility"] = "private" if args.private else "public"
+    repository["default_branch"] = args.default_branch
+
+    repo_data = {
+        "locals": {
+            local_name: {
+                name: repository,
+            }
+        }
+    }
+    write_json(repo_path, repo_data)
+
+    repositories[name] = f'${{local.{local_name}["{name}"]}}'
+    locals_data["locals"]["repositories"] = dict(sorted(repositories.items()))
+    write_json(locals_path, locals_data)
+
+    print(f"Created {repo_path.relative_to(root)}")
+    print(f"Updated {locals_path.relative_to(root)}")
+    print("Run: tofu fmt && tofu validate && tofu plan")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

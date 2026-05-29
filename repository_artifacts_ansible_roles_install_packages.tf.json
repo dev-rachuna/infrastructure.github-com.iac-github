@@ -1,0 +1,19 @@
+{
+  "locals": {
+    "repository_artifacts_ansible_roles_install_packages": {
+      "artifacts.ansible-roles.install-packages": {
+        "description": "Rola Ansible install-packages do instalacji, aktualizacji i usuwania pakietów na dystrybucjach Linux: Debian/Ubuntu (APT), RedHat/AlmaLinux (DNF), Alpine (APK). Obsługuje dodawanie repozytoriów z kluczami GPG oraz uruchamianie skryptów instalacyjnych repozytoriów.",
+        "visibility": "public",
+        "has_issues": true,
+        "has_projects": true,
+        "has_wiki": true,
+        "has_discussions": false,
+        "archived": false,
+        "allow_forking": true,
+        "is_template": false,
+        "default_branch": "main",
+        "topics": []
+      }
+    }
+  }
+}
