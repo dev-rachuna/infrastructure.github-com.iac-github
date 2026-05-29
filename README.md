@@ -79,5 +79,5 @@ Jeśli masz pomysły na ulepszenia, zgłoś problem, rozwidl repozytorium albo u
 ## Autor
 
 | ![Maciej Rachuna](https://gitlab.com/uploads/-/system/user/avatar/8161705/avatar.png?width=120px) |
-|------------------------------------------------------------------------------------------------|
-| [Maciej Rachuna](https://gitlab.com/mrachuna)                                                  |
+|---------------------------------------------------------------------------------------------------|
+| [Maciej Rachuna](https://gitlab.commrachuna)                                                      |
