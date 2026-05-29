@@ -1,0 +1,19 @@
+{
+  "locals": {
+    "repository_artifacts_opentofu_vault_userpass_account": {
+      "artifacts.opentofu.vault-userpass-account": {
+        "description": "Moduł OpenTofu do tworzenia kont userpass w Vault — generuje hasło, tworzy użytkownika, zapisuje w KV, ustawia polityki",
+        "visibility": "public",
+        "has_issues": true,
+        "has_projects": true,
+        "has_wiki": true,
+        "has_discussions": false,
+        "archived": false,
+        "allow_forking": true,
+        "is_template": false,
+        "default_branch": "feat/init",
+        "topics": []
+      }
+    }
+  }
+}

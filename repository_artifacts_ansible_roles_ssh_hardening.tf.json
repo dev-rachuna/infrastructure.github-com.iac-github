@@ -1,0 +1,19 @@
+{
+  "locals": {
+    "repository_artifacts_ansible_roles_ssh_hardening": {
+      "artifacts.ansible-roles.ssh-hardening": {
+        "description": "Rola Ansible do instalacji i hardeningu serwera OpenSSH na systemach Debian/Ubuntu, RHEL/AlmaLinux oraz Alpine.",
+        "visibility": "public",
+        "has_issues": true,
+        "has_projects": true,
+        "has_wiki": true,
+        "has_discussions": false,
+        "archived": false,
+        "allow_forking": true,
+        "is_template": false,
+        "default_branch": "main",
+        "topics": []
+      }
+    }
+  }
+}

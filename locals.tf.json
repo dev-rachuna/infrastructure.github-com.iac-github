@@ -1,0 +1,30 @@
+{
+  "locals": {
+    "repositories": {
+      "artifacts.ansible-roles.certificates": "${local.repository_artifacts_ansible_roles_certificates[\"artifacts.ansible-roles.certificates\"]}",
+      "artifacts.ansible-roles.gitlab-profile": "${local.repository_artifacts_ansible_roles_gitlab_profile[\"artifacts.ansible-roles.gitlab-profile\"]}",
+      "artifacts.ansible-roles.haproxy": "${local.repository_artifacts_ansible_roles_haproxy[\"artifacts.ansible-roles.haproxy\"]}",
+      "artifacts.ansible-roles.install-keepalived-vip": "${local.repository_artifacts_ansible_roles_install_keepalived_vip[\"artifacts.ansible-roles.install-keepalived-vip\"]}",
+      "artifacts.ansible-roles.install-packages": "${local.repository_artifacts_ansible_roles_install_packages[\"artifacts.ansible-roles.install-packages\"]}",
+      "artifacts.ansible-roles.set-hostname": "${local.repository_artifacts_ansible_roles_set_hostname[\"artifacts.ansible-roles.set-hostname\"]}",
+      "artifacts.ansible-roles.set-timezone": "${local.repository_artifacts_ansible_roles_set_timezone[\"artifacts.ansible-roles.set-timezone\"]}",
+      "artifacts.ansible-roles.ssh-hardening": "${local.repository_artifacts_ansible_roles_ssh_hardening[\"artifacts.ansible-roles.ssh-hardening\"]}",
+      "artifacts.ansible-roles.sudo": "${local.repository_artifacts_ansible_roles_sudo[\"artifacts.ansible-roles.sudo\"]}",
+      "artifacts.ansible-roles.users-management": "${local.repository_artifacts_ansible_roles_users_management[\"artifacts.ansible-roles.users-management\"]}",
+      "artifacts.containers.ansible": "${local.repository_artifacts_containers_ansible[\"artifacts.containers.ansible\"]}",
+      "artifacts.opentofu.gitlab-group": "${local.repository_artifacts_opentofu_gitlab_group[\"artifacts.opentofu.gitlab-group\"]}",
+      "artifacts.opentofu.gitlab-profile": "${local.repository_artifacts_opentofu_gitlab_profile[\"artifacts.opentofu.gitlab-profile\"]}",
+      "artifacts.opentofu.gitlab-project": "${local.repository_artifacts_opentofu_gitlab_project[\"artifacts.opentofu.gitlab-project\"]}",
+      "artifacts.opentofu.proxmox-container": "${local.repository_artifacts_opentofu_proxmox_container[\"artifacts.opentofu.proxmox-container\"]}",
+      "artifacts.opentofu.vault-userpass-account": "${local.repository_artifacts_opentofu_vault_userpass_account[\"artifacts.opentofu.vault-userpass-account\"]}",
+      "awesome": "${local.repository_awesome[\"awesome\"]}",
+      "gitlab-profile": "${local.repository_gitlab_profile[\"gitlab-profile\"]}",
+      "infrastructure.gitlab-com.ansible": "${local.repository_infrastructure_gitlab_com_ansible[\"infrastructure.gitlab-com.ansible\"]}",
+      "infrastructure.gitlab-com.gitlab-profile": "${local.repository_infrastructure_gitlab_com_gitlab_profile[\"infrastructure.gitlab-com.gitlab-profile\"]}",
+      "infrastructure.gitlab-com.iac-gitlab": "${local.repository_infrastructure_gitlab_com_iac_gitlab[\"infrastructure.gitlab-com.iac-gitlab\"]}",
+      "infrastructure.pve-rachuna-dev.iac-proxmox": "${local.repository_infrastructure_pve_rachuna_dev_iac_proxmox[\"infrastructure.pve-rachuna-dev.iac-proxmox\"]}",
+      "infrastructure.vault-rachuna-dev.ansible": "${local.repository_infrastructure_vault_rachuna_dev_ansible[\"infrastructure.vault-rachuna-dev.ansible\"]}",
+      "infrastructure.vault-rachuna-dev.iac-vault": "${local.repository_infrastructure_vault_rachuna_dev_iac_vault[\"infrastructure.vault-rachuna-dev.iac-vault\"]}"
+    }
+  }
+}
