@@ -24,6 +24,7 @@
       "artifacts.opentofu.proxmox-container": "${local.repository_artifacts_opentofu_proxmox_container[\"artifacts.opentofu.proxmox-container\"]}",
       "artifacts.opentofu.vault-userpass-account": "${local.repository_artifacts_opentofu_vault_userpass_account[\"artifacts.opentofu.vault-userpass-account\"]}",
       "awesome": "${local.repository_awesome[\"awesome\"]}",
+      "dev.rachuna.devtools.scripts": "${local.repository_dev_rachuna_devtools_scripts[\"dev.rachuna.devtools.scripts\"]}",
       "gitlab-profile": "${local.repository_gitlab_profile[\"gitlab-profile\"]}",
       "infrastructure.github-com.iac-github": "${local.repository_infrastructure_github_com_iac_github[\"infrastructure.github-com.iac-github\"]}",
       "infrastructure.gitlab-com.ansible": "${local.repository_infrastructure_gitlab_com_ansible[\"infrastructure.gitlab-com.ansible\"]}",
