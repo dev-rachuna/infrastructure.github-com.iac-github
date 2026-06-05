@@ -1,0 +1,19 @@
+{
+  "locals": {
+    "repository_devtools_devcontainers": {
+      "devtools.devcontainers": {
+        "visibility": "public",
+        "has_issues": true,
+        "has_projects": true,
+        "has_wiki": true,
+        "has_discussions": false,
+        "archived": false,
+        "allow_forking": true,
+        "is_template": false,
+        "default_branch": "main",
+        "topics": [],
+        "description": "Centralne repozytorium gotowych DevContainers."
+      }
+    }
+  }
+}
