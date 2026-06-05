@@ -23,6 +23,10 @@ def repository_identifier(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "_", name.lower()).strip("_")
 
 
+def normalize_repository_name(name: str) -> str:
+    return name.strip().replace("/", ".")
+
+
 def repository_file_name(name: str) -> str:
     return f"{repository_identifier(name)}.tf.json"
 
@@ -44,7 +48,10 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Add a GitHub repository definition to this OpenTofu project."
     )
-    parser.add_argument("name", help="Repository name, for example artifacts.example")
+    parser.add_argument(
+        "name",
+        help="Repository name, for example artifacts.example or artifacts/example",
+    )
     parser.add_argument(
         "description",
         nargs="+",
@@ -65,12 +72,12 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
-    name = args.name.strip()
+    name = normalize_repository_name(args.name)
     description = " ".join(args.description).strip()
 
     if not re.fullmatch(r"[A-Za-z0-9_.-]+", name):
         print(
-            "Repository name may contain only letters, digits, dots, underscores and hyphens.",
+            "Repository name may contain only letters, digits, dots, underscores, hyphens and slashes.",
             file=sys.stderr,
         )
         return 2

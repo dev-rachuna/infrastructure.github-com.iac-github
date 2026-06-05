@@ -23,6 +23,7 @@
       "artifacts.opentofu.gitlab-project": "${local.repository_artifacts_opentofu_gitlab_project[\"artifacts.opentofu.gitlab-project\"]}",
       "artifacts.opentofu.proxmox-container": "${local.repository_artifacts_opentofu_proxmox_container[\"artifacts.opentofu.proxmox-container\"]}",
       "artifacts.opentofu.routeros-certificates": "${local.repository_artifacts_opentofu_routeros_certificates[\"artifacts.opentofu.routeros-certificates\"]}",
+      "artifacts.opentofu.routeros-interfaces": "${local.repository_artifacts_opentofu_routeros_interfaces[\"artifacts.opentofu.routeros-interfaces\"]}",
       "artifacts.opentofu.vault-userpass-account": "${local.repository_artifacts_opentofu_vault_userpass_account[\"artifacts.opentofu.vault-userpass-account\"]}",
       "awesome": "${local.repository_awesome[\"awesome\"]}",
       "dev.rachuna.devtools.scripts": "${local.repository_dev_rachuna_devtools_scripts[\"dev.rachuna.devtools.scripts\"]}",
