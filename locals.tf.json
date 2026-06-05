@@ -37,6 +37,7 @@
       "infrastructure.pve-rachuna-dev.iac-proxmox": "${local.repository_infrastructure_pve_rachuna_dev_iac_proxmox[\"infrastructure.pve-rachuna-dev.iac-proxmox\"]}",
       "infrastructure.router-rachuna-dev.iac-router": "${local.repository_infrastructure_router_rachuna_dev_iac_router[\"infrastructure.router-rachuna-dev.iac-router\"]}",
       "infrastructure.vault-rachuna-dev.ansible": "${local.repository_infrastructure_vault_rachuna_dev_ansible[\"infrastructure.vault-rachuna-dev.ansible\"]}",
+      "infrastructure.vault-rachuna-dev.gitlab-profile": "${local.repository_infrastructure_vault_rachuna_dev_gitlab_profile[\"infrastructure.vault-rachuna-dev.gitlab-profile\"]}",
       "infrastructure.vault-rachuna-dev.iac-vault": "${local.repository_infrastructure_vault_rachuna_dev_iac_vault[\"infrastructure.vault-rachuna-dev.iac-vault\"]}"
     }
   }
