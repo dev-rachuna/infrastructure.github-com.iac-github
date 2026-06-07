@@ -1,4 +1,4 @@
-# <img src="images/opentofu.png" alt="opentofu" height="30"/> iac-github
+# <img src=".gitlab/opentofu.png" alt="opentofu" height="30"/> iac-github
 
 ::include{file=.gitlab/badges.md}
 
