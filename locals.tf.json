@@ -34,6 +34,7 @@
       "infrastructure.gitlab-com.ansible": "${local.repository_infrastructure_gitlab_com_ansible[\"infrastructure.gitlab-com.ansible\"]}",
       "infrastructure.gitlab-com.gitlab-profile": "${local.repository_infrastructure_gitlab_com_gitlab_profile[\"infrastructure.gitlab-com.gitlab-profile\"]}",
       "infrastructure.gitlab-com.iac-gitlab": "${local.repository_infrastructure_gitlab_com_iac_gitlab[\"infrastructure.gitlab-com.iac-gitlab\"]}",
+      "infrastructure.pve-rachuna-dev.ansible": "${local.repository_infrastructure_pve_rachuna_dev_ansible[\"infrastructure.pve-rachuna-dev.ansible\"]}",
       "infrastructure.pve-rachuna-dev.iac-proxmox": "${local.repository_infrastructure_pve_rachuna_dev_iac_proxmox[\"infrastructure.pve-rachuna-dev.iac-proxmox\"]}",
       "infrastructure.router-rachuna-dev.iac-router": "${local.repository_infrastructure_router_rachuna_dev_iac_router[\"infrastructure.router-rachuna-dev.iac-router\"]}",
       "infrastructure.vault-rachuna-dev.ansible": "${local.repository_infrastructure_vault_rachuna_dev_ansible[\"infrastructure.vault-rachuna-dev.ansible\"]}",

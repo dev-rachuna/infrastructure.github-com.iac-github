@@ -1,5 +1,7 @@
 # <img src="images/opentofu.png" alt="opentofu" height="30"/> iac-github
 
+::include{file=.gitlab/badges.md}
+
 Projekt OpenTofu do zarządzania repozytoriami w organizacji GitHub `dev-rachuna`.
 
 Organizacja została rozpoznana z GitHub API jako `dev-rachuna`. Nazwa `dev.rachuna` nie jest poprawnym slugiem organizacji na github.com.
@@ -62,22 +64,4 @@ Skrypt tworzy plik `repository_*.tf.json` i dopisuje repozytorium do `locals.tf.
 
 ---
 
-## Wkład
-
-Jeśli masz pomysły na ulepszenia, zgłoś problem, rozwidl repozytorium albo utwórz Merge Request.
-
-[Zasady kontrybucji](CONTRIBUTING.md)
-
----
-
-## Licencja
-
-[Licencja](LICENSE) oparta na zasadach Creative Commons BY-NC-SA 4.0, dostosowana do potrzeb projektu.
-
----
-
-## Autor
-
-| ![Maciej Rachuna](https://gitlab.com/uploads/-/system/user/avatar/8161705/avatar.png?width=120px) |
-|---------------------------------------------------------------------------------------------------|
-| [Maciej Rachuna](https://gitlab.commrachuna)                                                      |
+::include{file=.gitlab/footer.md}
